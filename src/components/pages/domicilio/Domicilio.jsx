@@ -13,7 +13,7 @@ const Domicilio = () => {
           <h2 className="text-center mb-4">SERVIZI A DOMICILIO</h2>
           <div className="col-12 col-md-6">
             <img
-              className="img-fluid  rounded img-custom"
+              className=" rounded img-fluid  img-custom"
               src={Lettino}
               alt=""
             />{" "}
