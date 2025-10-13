@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoNero from "../../image/logo-nero.png";
+import Logo from "../../image/logo-scritta.png";
 
 const Navigation2 = () => {
   return (
@@ -9,7 +9,7 @@ const Navigation2 = () => {
         <nav className="navbar  navbar-expand-lg">
           <div className="container-fluid ">
             <Link className="text-dark fs-3 text-decoration-none" to="/">
-              <img className="logo" src={LogoNero} alt="" />
+              <img className="logo" src={Logo} alt="" />
             </Link>
             <button
               className="navbar-toggler"
@@ -35,6 +35,9 @@ const Navigation2 = () => {
                 </Link>
                 <Link className="nav-link text-dark fs-3" to="/corsi">
                   Corsi{" "}
+                </Link>
+                <Link className="nav-link text-dark fs-3" to="/domicilio">
+                  Servizi a Domicilio
                 </Link>
               </div>
             </div>

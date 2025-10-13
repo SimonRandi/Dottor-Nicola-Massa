@@ -15,7 +15,7 @@ const Footer = () => {
               <strong>Nicola Massa</strong> <br />
               Specialista in tecniche di Massoterapia Sanitaria M.C.B.
             </p>
-
+            <div className="footer-divider"></div>
             <p className="mb-1">
               <MapPin /> Via Sardegna - 08020 San Toeodoro
             </p>
@@ -36,7 +36,7 @@ const Footer = () => {
               <FaInstagram size={22} />
               <span className="ms-2">nicolamassa_massoterapista</span>
             </div>
-
+            <div className="footer-divider"></div>
             <div className="">
               <p className="mb-1">Riceve per appuntamento:</p>
               <ul className="ps-3 mb-0">

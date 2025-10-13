@@ -7,6 +7,7 @@ import Homepage from "./components/pages/Homepage";
 import Trattamenti from "./components/pages/trattamenti/Trattamenti.jsx";
 import ChiSono from "./components/pages/chi-sono/ChiSono.jsx";
 import Corsi from "./components/pages/corsi/Corsi.jsx";
+import Domicilio from "./components/pages/domicilio/Domicilio.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/trattamenti" element={<Trattamenti />}></Route>
           <Route path="/chi-sono" element={<ChiSono />}></Route>
           <Route path="/corsi" element={<Corsi />}></Route>
+          <Route path="/domicilio" element={<Domicilio />}></Route>
         </Routes>
       </BrowserRouter>
     </>

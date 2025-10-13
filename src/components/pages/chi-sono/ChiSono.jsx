@@ -25,7 +25,7 @@ const ChiSono = () => {
                 Sono un Chinesiologo - Massoterapista. <br />
                 Sono nato a Nuoro ma mi sono trasferito per studio prima nelle
                 marche e poi in Lombardia, ho deciso di fare ritorno nella mia
-                isola per aprire uno studio professionale{" "}
+                isola per aprire uno studio professionale.{" "}
               </p>
               <div className="vertical-divider"></div>
 
@@ -44,7 +44,7 @@ const ChiSono = () => {
                   Laurea Magistrale in Scienze e Tecniche delle Attività Motorie
                   Preventive e Adatte
                 </small>{" "}
-                presso l'Università degli Studi di Pavia
+                presso l'Università degli Studi di Pavia.
               </p>
               <p className=" font mt-4 ">
                 Per ampliare ulteriormente le mie conoscenze nell'ambito del
@@ -52,7 +52,7 @@ const ChiSono = () => {
                 <small className="fw-bold text-dark">
                   Diploma di MCB (Massoterapista)
                 </small>{" "}
-                presso la scuola di specializzazione Essence Academy di Milano
+                presso la scuola di specializzazione Essence Academy di Milano.
               </p>
               <div className="vertical-divider"></div>
             </div>

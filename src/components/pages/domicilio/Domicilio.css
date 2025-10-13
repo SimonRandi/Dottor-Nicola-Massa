@@ -1,0 +1,20 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+.custom-container {
+  height: 100vh;
+}
+
+.img-custom {
+  height: 80vh !important;
+}
+
+.text-lettino {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .img-custom {
+    height: 60vh !important;
+  }
+}

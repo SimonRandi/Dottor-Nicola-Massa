@@ -67,11 +67,18 @@ const Navigation = () => {
                 Trattamenti
               </Link>
               <Link
-                className="nav-link text-white fs-3"
+                className="nav-link text-color fs-3"
                 to="/corsi"
                 onClick={() => setIsOpen(false)}
               >
                 Corsi
+              </Link>
+              <Link
+                className="nav-link text-color fs-3"
+                to="/domicilio"
+                onClick={() => setIsOpen(false)}
+              >
+                Servizi a Domicilio
               </Link>
             </div>
           </div>

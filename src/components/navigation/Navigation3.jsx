@@ -35,6 +35,9 @@ const Navigation3 = () => {
                 <Link className="nav-link text-dark fs-3" to="/corsi">
                   Corsi{" "}
                 </Link>
+                <Link className="nav-link text-dark fs-3" to="/domicilio">
+                  Servizi a Domicilio
+                </Link>
               </div>
             </div>
           </div>
