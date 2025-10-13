@@ -1,8 +1,8 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
-import Funzionale from "../../../image/corsi/funzionale.PNG";
-import Personal from "../../../image/corsi/personal.PNG";
-import Posturale from "../../../image/corsi/posturale.PNG";
-import Dolce from "../../../image/corsi/dolce.PNG";
+import Funzionale from "../../../image/corsi/funzionale.jpeg";
+import Personal from "../../../image/corsi/personal.jpeg";
+import Posturale from "../../../image/corsi/posturale.jpeg";
+import Dolce from "../../../image/corsi/dolce.jpeg";
 import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
 import "../corsi/Corsi.css";
@@ -46,7 +46,7 @@ export default function Corsi() {
   return (
     <>
       <Navigation3 />
-      <Container className="py-5">
+      <Container className="">
         <h1 className="text-center custom-text mb-5 fw-bold text-uppercase ">
           Corsi e Allenamenti
         </h1>

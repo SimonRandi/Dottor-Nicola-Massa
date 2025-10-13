@@ -20,7 +20,6 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen]);
 
-  // 🔹 Gestisce il blur sul body
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("blur-background");
