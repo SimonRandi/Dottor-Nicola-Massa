@@ -1,0 +1,32 @@
+.navigation-container {
+  background-color: transparent;
+}
+
+.text-color {
+  color: white !important;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  color: black;
+}
+
+/* Effetto blur sullo sfondo */
+.blur-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+/* Navbar sempre sopra il blur */
+.navigation-container {
+  position: relative;
+  z-index: 10;
+}

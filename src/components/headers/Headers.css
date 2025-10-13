@@ -1,0 +1,26 @@
+.font-heading {
+  font-family: "Open round heading";
+}
+
+.font-text {
+  font-family: "Open round text";
+}
+
+.custom-image {
+  width: 100% !important;
+  height: 600px !important;
+  border-radius: 20px;
+}
+
+.main-image {
+  margin-top: 10px;
+  width: 100%;
+  height: 800px;
+}
+
+@media (max-width: 767px) {
+  .custom-image {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}

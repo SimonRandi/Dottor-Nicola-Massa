@@ -1,0 +1,31 @@
+.font-heading-treatment {
+  font-family: "Playfair Display", serif;
+
+  color: rgb(77 147 172);
+}
+
+.container-custom {
+  min-height: 80vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.treatment-img {
+  width: 450px;
+  height: 550px !important;
+  border-radius: 10px;
+}
+
+.text-font {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: rgb(72, 70, 70);
+  line-height: 2em;
+}
+
+@media (max-width: 767px) {
+  .treatment-img {
+    width: 100%;
+    height: 55vh;
+  }
+}

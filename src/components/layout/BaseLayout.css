@@ -1,0 +1,20 @@
+.container-main {
+  background: url("../../image/foto-homepage.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.heading {
+  position: absolute;
+  bottom: 500px;
+  left: 30%;
+  font-size: 100px;
+}
+
+@media (max-width: 767px) {
+  .container-main {
+    background-position: center;
+    max-height: 100vh;
+  }
+}
