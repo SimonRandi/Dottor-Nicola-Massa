@@ -26,16 +26,16 @@ const Navigation3 = () => {
               id="navbarNavAltMarkup"
             >
               <div className="navbar-nav">
-                <Link className="nav-link text-dark fs-3" to="/chi-sono">
+                <Link className="nav-link custom-text fs-3" to="/chi-sono">
                   Chi sono{" "}
                 </Link>
-                <Link className=" text-dark nav-link  fs-3" to="/trattamenti">
+                <Link className=" custom-text nav-link  fs-3" to="/trattamenti">
                   Trattamenti
                 </Link>
-                <Link className="nav-link text-dark fs-3" to="/corsi">
+                <Link className="nav-link custom-text fs-3" to="/corsi">
                   Corsi{" "}
                 </Link>
-                <Link className="nav-link text-dark fs-3" to="/domicilio">
+                <Link className="nav-link custom-text fs-3" to="/domicilio">
                   Servizi a Domicilio
                 </Link>
               </div>

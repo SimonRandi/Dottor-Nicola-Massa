@@ -4,5 +4,5 @@
 
 .custom-text {
   font-family: "Playfair Display", serif;
-  color: rgb(77, 147, 172);
+  color: rgb(77, 147, 172) !important;
 }

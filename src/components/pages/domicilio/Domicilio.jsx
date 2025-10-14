@@ -10,7 +10,29 @@ const Domicilio = () => {
       <Navigation2 />
       <div className="container custom-container">
         <div className="row">
-          <h2 className="text-center mb-4">SERVIZI A DOMICILIO</h2>
+          <h2 className="text-center custom-text fw-bold mb-4">
+            SERVIZI A DOMICILIO
+          </h2>
+          <div className="col-12">
+            <video
+              src="/image/Video Domicilio Finito.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              className="w-100 rounded video-custom d-md-none"
+            ></video>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 w-100 text-center">
+          <p className="text-center text-lettino">
+            Hai bisogno di un trattamento ma non vuoi affrontare il traffico?{" "}
+            <br />
+            Nessun problema , vengo io a casa tua.
+          </p>
+        </div>
+        <div className="row">
           <div className="col-12 col-md-6">
             <img
               className=" rounded img-fluid  img-custom"
@@ -19,13 +41,7 @@ const Domicilio = () => {
               loading="lazy"
             />{" "}
           </div>
-          <div className="col-12 col-md-6">
-            <p className="text-center text-lettino">
-              Hai bisogno di un trattamento ma non vuoi affrontare il traffico?{" "}
-              <br />
-              Nessun problema , vengo io a casa tua.
-            </p>
-          </div>
+          <div className="col-12 col-md-6"></div>
         </div>
       </div>
 

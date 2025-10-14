@@ -7,7 +7,7 @@
 .font {
   font-family: "Playfair Display", serif;
   font-size: 15px;
-  color: rgb(72, 70, 70);
+
   line-height: 2em;
 }
 
@@ -22,7 +22,7 @@
 .vertical-divider {
   width: 60px;
   height: 1px;
-  background-color: #000;
+  background-color: black;
   margin: 1rem auto;
   opacity: 0.5; /* opzionale, per un look più delicato */
 }
