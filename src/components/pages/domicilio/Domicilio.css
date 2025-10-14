@@ -6,9 +6,21 @@
 }
 
 .img-custom {
-  height: 80vh !important;
-  display: inline;
+  display: block;
   margin: 0 auto;
+  width: 100%;
+  max-width: 600px; /* o quello che vuoi come limite */
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* opzionale, estetico */
+}
+
+@media (max-width: 767px) {
+  .img-custom {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .text-lettino {
@@ -17,6 +29,8 @@
 
 @media (max-width: 767px) {
   .img-custom {
-    height: 60vh !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
