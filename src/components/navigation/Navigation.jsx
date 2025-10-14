@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../navigation/Navigation.css";
 import { Link } from "react-router-dom";
-import Logo from "../../image/logo-scritta.png";
+const Logo = "/image/logo-scritta.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const Navigation = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link className="text-color fs-3 text-decoration-none" to="/">
-            <img className="logo" src={Logo} alt="Logo" />
+            <img loading="lazy" className="logo" src={Logo} alt="Logo" />
           </Link>
           <button
             className="navbar-toggler"

@@ -1,5 +1,5 @@
 .container-main {
-  background: url("../../image/foto-homepage.jpg");
+  background: url("/image/foto-homepage.webp");
   background-size: cover;
   background-position: bottom;
   height: 100vh;

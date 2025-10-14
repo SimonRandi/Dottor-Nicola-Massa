@@ -1,5 +1,5 @@
 import React from "react";
-import DottorNicola from "../../../image/dottor-nicola.jpg";
+const DottorNicola = "/image/dottor-nicola.webp";
 import "../../pages/chi-sono/ChiSono.css";
 import Footer from "../../footer/Footer";
 import Navigation2 from "../../navigation/Navigation2";

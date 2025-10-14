@@ -1,11 +1,11 @@
 import React from "react";
 import "../trattamenti/Trattamenti.css";
-import Trattamento1 from "../../../image/Trattamento1.JPG";
-import Trattamento2 from "../../../image/Trattamento2.JPG";
-import Trattamento3 from "../../../image/Trattamento3.JPG";
-import Trattamento4 from "../../../image/Trattamento4.jpeg";
-import Trattamento5 from "../../../image/Trattamento5.jpeg";
-import Trattamento6 from "../../../image/Trattamento6.JPG";
+const Trattamento1 = "/image/Trattamento1.webp";
+const Trattamento2 = "/image/Trattamento2.webp";
+const Trattamento3 = "/image/Trattamento3.webp";
+const Trattamento4 = "/image/Trattamento4.webp";
+const Trattamento5 = "/image/Trattamento5.webp";
+const Trattamento6 = "/image/Trattamento6.webp";
 
 import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
@@ -26,6 +26,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento1}
                 alt="Massaggio Decontratturante"
+                loading="lazy"
               />
             </div>
             <div
@@ -69,6 +70,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento2}
                 alt="Massaggio Rilassante"
+                loading="lazy"
               />
             </div>
           </div>
@@ -84,6 +86,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento3}
                 alt="Massaggio Linfodrenante"
+                loading="lazy"
               />
             </div>
             <div
@@ -126,6 +129,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento4}
                 alt="Massaggio Sportivo"
+                loading="lazy"
               />
             </div>
           </div>
@@ -141,6 +145,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento5}
                 alt="Trattamento Cervicale"
+                loading="lazy"
               />
             </div>
             <div
@@ -184,6 +189,7 @@ const Trattamenti = () => {
                 className="img-fluid treatment-img"
                 src={Trattamento6}
                 alt="Massoterapia"
+                loading="lazy"
               />
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import "../heroSection/HeroSection.css";
-import Studio1 from "../../image/studio1.jpeg";
-import Studio2 from "../../image/studio2.jpeg";
-import Studio3 from "../../image/studio3.jpeg";
+const Studio1 = "/image/studio1.jpeg";
+const Studio2 = "/image/studio2.jpeg";
+const Studio3 = "/image/studio3.jpeg";
 
 const HeroSection = () => {
   return (
@@ -33,6 +33,7 @@ const HeroSection = () => {
               className="studio-image img-fluid mb-2 "
               src={Studio3}
               alt=""
+              loading="lazy"
             />
             <p className="text-center heading-text mb-4 ">
               Qui, nel cuore di un atmosfera accogliente e raffinata, offro un
@@ -43,7 +44,12 @@ const HeroSection = () => {
             /* data-aos="flip-right" */
             className="col-12 col-md-4 d-flex flex-column "
           >
-            <img className="studio-image img-fluid mb-2" src={Studio2} alt="" />
+            <img
+              loading="lazy"
+              className="studio-image img-fluid mb-2"
+              src={Studio2}
+              alt=""
+            />
             <p className="text-center  heading-text">
               Scegliendo tra una vasta gamma di trattamenti, garantisco
               un'esperienza di assoluta qualità in cui ogni dettaglio è curato
@@ -54,7 +60,12 @@ const HeroSection = () => {
             /* data-aos="flip-right" */
             className="col-12 col-md-4 d-flex flex-column"
           >
-            <img className="studio-image img-fluid" src={Studio1} alt="" />
+            <img
+              loading="lazy"
+              className="studio-image img-fluid"
+              src={Studio1}
+              alt=""
+            />
             <p className="text-center  heading-text">
               Il tuo confort e la tua soddisfazione sono <br /> la mia massima
               priorità

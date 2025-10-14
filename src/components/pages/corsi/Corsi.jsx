@@ -1,8 +1,8 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
-import Funzionale from "../../../image/corsi/funzionale.jpeg";
-import Personal from "../../../image/corsi/personal.jpeg";
-import Posturale from "../../../image/corsi/posturale.jpeg";
-import Dolce from "../../../image/corsi/dolce.jpeg";
+const Funzionale = "/image/corsi/funzionale.webp";
+const Personal = "/image/corsi/personal.webp";
+const Posturale = "/image/corsi/posturale.webp";
+const Dolce = "/image/corsi/dolce.webp";
 import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
 import "../corsi/Corsi.css";
@@ -64,6 +64,7 @@ export default function Corsi() {
               >
                 <div>
                   <Card.Img
+                    loading="lazy"
                     variant="top"
                     src={corso.img}
                     alt={corso.titolo}

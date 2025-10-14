@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../image/logo-scritta.png";
+const Logo = "/image/logo-scritta.png";
 
 const Navigation2 = () => {
   return (
@@ -9,7 +9,7 @@ const Navigation2 = () => {
         <nav className="navbar  navbar-expand-lg">
           <div className="container-fluid ">
             <Link className="text-dark fs-3 text-decoration-none" to="/">
-              <img className="logo" src={Logo} alt="" />
+              <img loading="lazy" className="logo" src={Logo} alt="" />
             </Link>
             <button
               className="navbar-toggler"

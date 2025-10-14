@@ -2,7 +2,7 @@ import React from "react";
 import Navigation2 from "../../navigation/Navigation2";
 import Footer from "../../footer/Footer";
 import "../domicilio/Domicilio.css";
-import Lettino from "../../../image/corsi/lettino.jpg";
+const Lettino = "/image/corsi/lettino.jpg";
 
 const Domicilio = () => {
   return (
@@ -16,6 +16,7 @@ const Domicilio = () => {
               className=" rounded img-fluid  img-custom"
               src={Lettino}
               alt=""
+              loading="lazy"
             />{" "}
           </div>
           <div className="col-12 col-md-6">
