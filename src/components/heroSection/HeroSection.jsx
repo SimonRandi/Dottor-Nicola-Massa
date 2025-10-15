@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="row ">
           <h2 className=" text-center heading-text mt-3 mb-3">
             Benvenuti nel mio studio di Massoterapia e Chinesiologia, <br />{" "}
-            dove il relax e il benessere si fondono armoniosamente
+            dove il relax e il benessere si fondono armoniosamente.
           </h2>
           <div className="text-center mb-4">
             <button
@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
             <p className="text-center heading-text mb-4 ">
               Qui, nel cuore di un atmosfera accogliente e raffinata, offro un
-              esperienza personalizzata e mirata alle singole esigenze
+              esperienza personalizzata e mirata alle singole esigenze.
             </p>
           </div>
           <div
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <p className="text-center  heading-text">
               Scegliendo tra una vasta gamma di trattamenti, garantisco
               un'esperienza di assoluta qualità in cui ogni dettaglio è curato
-              con attenzione
+              con attenzione.
             </p>
           </div>
           <div
@@ -68,7 +68,7 @@ const HeroSection = () => {
             />
             <p className="text-center  heading-text">
               Il tuo confort e la tua soddisfazione sono <br /> la mia massima
-              priorità
+              priorità.
             </p>
           </div>
         </div>

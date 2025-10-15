@@ -50,9 +50,10 @@ const Domicilio = () => {
                 <li>Massaggio Sportivo</li>
                 <li>Massaggio Drenante</li>
                 <li>Massaggio Rilassante</li>
+                <li>Personal Training</li>
               </ul>
             </div>
-            <div className="custom-divider d-md-none"></div>
+            <div className="custom-divider mt-5 d-md-none"></div>
           </div>
         </div>
 
