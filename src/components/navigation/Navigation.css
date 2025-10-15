@@ -6,6 +6,10 @@
   color: white !important;
 }
 
+.custom-btn {
+  border-color: rgb(77 147 172) !important;
+}
+
 .logo {
   width: 130px;
   height: 130px;

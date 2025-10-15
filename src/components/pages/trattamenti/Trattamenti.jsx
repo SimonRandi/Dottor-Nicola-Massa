@@ -16,8 +16,8 @@ const Trattamenti = () => {
       <Navigation3 />
       <div className="container-custom">
         <div className="container">
-          {/* 1️⃣ Massaggio Decontratturante (Foto sinistra - Testo destra) */}
           <div className="row">
+            <h3 className="font-heading-treatment text-center">TRATTAMENTI</h3>
             <div
               data-aos="fade-right"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-1"
@@ -47,7 +47,6 @@ const Trattamenti = () => {
           </div>
           <div className="vertical-divider"></div>
 
-          {/* 2️⃣ Massaggio Rilassante Svedese (Testo sinistra - Foto destra) */}
           <div className="row">
             <div
               data-aos="fade-right"
@@ -74,9 +73,19 @@ const Trattamenti = () => {
               />
             </div>
           </div>
-          <div className="vertical-divider"></div>
 
-          {/* 3️⃣ Massaggio Linfodrenante (Foto sinistra - Testo destra) */}
+          <div className="text-center  ">
+            <button
+              className="btn custom-btn"
+              onClick={() => {
+                const footer = document.getElementById("footer");
+                footer.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contattami
+            </button>
+          </div>
+
           <div className="row">
             <div
               data-aos="fade-right"
@@ -105,7 +114,6 @@ const Trattamenti = () => {
           </div>
           <div className="vertical-divider"></div>
 
-          {/* 4️⃣ Massaggio Sportivo (Testo sinistra - Foto destra) */}
           <div className="row">
             <div
               data-aos="fade-right"
@@ -135,7 +143,6 @@ const Trattamenti = () => {
           </div>
           <div className="vertical-divider"></div>
 
-          {/* 5️⃣ Trattamento Cervicale (Foto sinistra - Testo destra) */}
           <div className="row">
             <div
               data-aos="fade-right"
@@ -167,7 +174,6 @@ const Trattamenti = () => {
           </div>
           <div className="vertical-divider"></div>
 
-          {/* 6️⃣ Massoterapia (Testo sinistra - Foto destra) */}
           <div className="row">
             <div
               data-aos="fade-right"

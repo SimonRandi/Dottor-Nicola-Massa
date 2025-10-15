@@ -8,7 +8,6 @@ const Navigation = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // 🔹 Chiude la navbar se si scrolla
   useEffect(() => {
     const handleScroll = () => {
       if (isOpen) {
@@ -30,13 +29,13 @@ const Navigation = () => {
 
   return (
     <div className="navigation-container">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar  navbar-expand-lg">
         <div className="container-fluid">
           <Link className="text-color fs-3 text-decoration-none" to="/">
             <img loading="lazy" className="logo" src={Logo} alt="Logo" />
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler custom-btn "
             type="button"
             onClick={toggleMenu}
             aria-expanded={isOpen ? "true" : "false"}
@@ -57,28 +56,28 @@ const Navigation = () => {
                 to="/chi-sono"
                 onClick={() => setIsOpen(false)}
               >
-                Chi sono
+                CHI SONO
               </Link>
               <Link
                 className="text-color nav-link fs-3"
                 to="/trattamenti"
                 onClick={() => setIsOpen(false)}
               >
-                Trattamenti
+                TRATTAMENTI
               </Link>
               <Link
                 className="nav-link text-color fs-3"
                 to="/corsi"
                 onClick={() => setIsOpen(false)}
               >
-                Corsi
+                CORSI
               </Link>
               <Link
                 className="nav-link text-color fs-3"
                 to="/domicilio"
                 onClick={() => setIsOpen(false)}
               >
-                Servizi a Domicilio
+                SERVIZI A DOMICILIO
               </Link>
             </div>
           </div>

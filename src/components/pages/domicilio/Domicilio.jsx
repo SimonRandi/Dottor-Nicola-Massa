@@ -21,18 +21,42 @@ const Domicilio = () => {
               loop
               playsInline
               controls
-              className="w-100 rounded video-custom d-md-none"
+              className="w-100 rounded video-custom"
             ></video>
           </div>
+
+          <div className="col-12   text-center py-3">
+            <div className="text-center mb-4">
+              <button
+                className="btn custom-btn"
+                onClick={() => {
+                  const footer = document.getElementById("footer");
+                  footer.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Contattami
+              </button>
+            </div>
+            <div className="custom-divider d-md-none"></div>
+            <p className="text-center text-lettino">
+              Goditi un momento di relax o svolgi la tua attività fisica
+              direttamente a casa tua.
+            </p>
+            <h5 className="text-center mt-3">Trattamenti Disponibili</h5>
+            <div className="d-flex justify-content-center mt-4">
+              <ul className="list-unstyled lh-3 lista-servizi ">
+                <li>Trattamento Terapeutico</li>
+                <li>Massaggio Decontratturante</li>
+                <li>Massaggio Sportivo</li>
+                <li>Massaggio Drenante</li>
+                <li>Massaggio Rilassante</li>
+              </ul>
+            </div>
+            <div className="custom-divider d-md-none"></div>
+          </div>
         </div>
-        <div className="col-12 col-md-6 w-100 text-center">
-          <p className="text-center text-lettino">
-            Hai bisogno di un trattamento ma non vuoi affrontare il traffico?{" "}
-            <br />
-            Nessun problema , vengo io a casa tua.
-          </p>
-        </div>
-        <div className="row">
+
+        {/* <div className="row">
           <div className="col-12 col-md-6">
             <img
               className=" rounded img-fluid  img-custom"
@@ -41,8 +65,11 @@ const Domicilio = () => {
               loading="lazy"
             />{" "}
           </div>
-          <div className="col-12 col-md-6"></div>
-        </div>
+
+          <div className="col-12 col-md-6 ">
+            <div className="custom-divider d-md-none"></div>
+          </div>
+        </div> */}
       </div>
 
       <Footer />

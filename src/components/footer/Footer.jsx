@@ -2,13 +2,14 @@ import React from "react";
 import "../footer/Footer.css";
 import { FaInstagram } from "react-icons/fa";
 import { MapPin, Mail, Phone } from "lucide-react";
+const Logo = "/image/logo-bianco.png";
 
 const Footer = () => {
   return (
     <footer id="footer" className="footer-container mt-4">
-      <div className="container py-5">
+      <div className="container  py-5">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-8 text-light">
+          <div className="col-12 col-md-6  text-light">
             <h4 className="fw-bold mb-3">Contatti</h4>
 
             <p className="mb-1">
@@ -46,6 +47,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <div className="d-flex justify-content-center"></div>
+            <img className="footer-logo bounce" src={Logo} alt="" />
           </div>
         </div>
       </div>

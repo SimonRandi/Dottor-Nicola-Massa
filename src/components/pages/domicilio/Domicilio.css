@@ -15,6 +15,14 @@
   border-radius: 12px; /* opzionale, estetico */
 }
 
+.custom-divider {
+  width: 60px;
+  height: 1px;
+  background-color: grey;
+  margin: 1rem auto;
+  opacity: 0.5;
+}
+
 .video-custom {
   height: 75vh;
   border-radius: 5px !important;
@@ -22,6 +30,22 @@
 
 .text-lettino {
   font-size: 20px;
+}
+
+.lista-servizi li {
+  background: white;
+  border: 1px solid rgba(77, 147, 172, 0.2);
+  border-left: 4px solid rgb(77, 147, 172);
+  border-right: 4px solid grey;
+
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.lista-servizi li:hover {
+  box-shadow: 0 3px 10px rgba(77, 147, 172, 0.2);
+  transform: scale(1.02);
 }
 
 @media (max-width: 767px) {

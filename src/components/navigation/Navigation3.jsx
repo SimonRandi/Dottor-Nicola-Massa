@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Logo = "/image/logo-scritta.png";
+import "../navigation/Navigation.css";
+
 const Navigation3 = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const Navigation3 = () => {
               <img loading="lazy" className="logo" src={Logo} alt="" />
             </Link>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler custom-btn"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -27,16 +29,16 @@ const Navigation3 = () => {
             >
               <div className="navbar-nav">
                 <Link className="nav-link custom-text fs-3" to="/chi-sono">
-                  Chi sono{" "}
+                  CHI SONO
                 </Link>
                 <Link className=" custom-text nav-link  fs-3" to="/trattamenti">
-                  Trattamenti
+                  TRATTAMENTI
                 </Link>
                 <Link className="nav-link custom-text fs-3" to="/corsi">
-                  Corsi{" "}
+                  CORSI
                 </Link>
                 <Link className="nav-link custom-text fs-3" to="/domicilio">
-                  Servizi a Domicilio
+                  SERVIZI A DOMICILIO
                 </Link>
               </div>
             </div>
