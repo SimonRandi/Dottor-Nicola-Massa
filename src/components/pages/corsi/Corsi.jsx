@@ -77,7 +77,7 @@ export default function Corsi() {
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div>
                       <Card.Title
-                        style={{ color: "black" }}
+                        style={{ color: "rgb(77, 147, 172)" }}
                         className="fw-bold text-center mb-2"
                       >
                         {corso.titolo}

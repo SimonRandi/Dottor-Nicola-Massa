@@ -3,8 +3,12 @@ import Navigation2 from "../../navigation/Navigation2";
 import Footer from "../../footer/Footer";
 import "../domicilio/Domicilio.css";
 const Lettino = "/image/corsi/lettino.jpg";
-
+import { useNavigate } from "react-router-dom";
 const Domicilio = () => {
+  const navigate = useNavigate();
+  const goToSection = (sectionId) => {
+    navigate(`/trattamenti#${sectionId}`);
+  };
   return (
     <>
       <Navigation2 />
@@ -45,32 +49,27 @@ const Domicilio = () => {
             <h5 className="text-center mt-3">Trattamenti Disponibili</h5>
             <div className="d-flex justify-content-center mt-4">
               <ul className="list-unstyled lh-3 lista-servizi ">
-                <li>Trattamento Terapeutico</li>
-                <li>Massaggio Decontratturante</li>
-                <li>Massaggio Sportivo</li>
-                <li>Massaggio Drenante</li>
-                <li>Massaggio Rilassante</li>
+                <li onClick={() => goToSection("massoterapia")}>
+                  Trattamento Terapeutico
+                </li>
+                <li onClick={() => goToSection("massaggio-decontratturante")}>
+                  Massaggio Decontratturante
+                </li>
+                <li onClick={() => goToSection("massaggio-sportivo")}>
+                  Massaggio Sportivo
+                </li>
+                <li onClick={() => goToSection("massaggio-drenante")}>
+                  Massaggio Drenante
+                </li>
+                <li onClick={() => goToSection("massaggio-rilassante")}>
+                  Massaggio Rilassante
+                </li>
                 <li>Personal Training</li>
               </ul>
             </div>
             <div className="custom-divider mt-5 d-md-none"></div>
           </div>
         </div>
-
-        {/* <div className="row">
-          <div className="col-12 col-md-6">
-            <img
-              className=" rounded img-fluid  img-custom"
-              src={Lettino}
-              alt=""
-              loading="lazy"
-            />{" "}
-          </div>
-
-          <div className="col-12 col-md-6 ">
-            <div className="custom-divider d-md-none"></div>
-          </div>
-        </div> */}
       </div>
 
       <Footer />

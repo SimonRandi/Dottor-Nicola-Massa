@@ -9,8 +9,40 @@ const Trattamento6 = "/image/Trattamento6.webp";
 
 import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Trattamenti = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          const yOffset = -80;
+          const y =
+            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    };
+
+    const observer = new MutationObserver(() => {
+      scrollToSection();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // fallback: tenta anche dopo 500ms
+    const timeout = setTimeout(scrollToSection, 500);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timeout);
+    };
+  }, [location]);
   return (
     <>
       <Navigation3 />
@@ -22,12 +54,14 @@ const Trattamenti = () => {
               data-aos="fade-right"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-1"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento1}
-                alt="Massaggio Decontratturante"
-                loading="lazy"
-              />
+              <section id="massaggio-decontratturante">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento1}
+                  alt="Massaggio Decontratturante"
+                  loading="lazy"
+                />
+              </section>
             </div>
             <div
               data-aos="fade-left"
@@ -55,6 +89,7 @@ const Trattamenti = () => {
               <h2 className="font-heading-treatment text-center mt-4">
                 Massaggio Rilassante Svedese
               </h2>
+
               <p className="text-black text-font text-center">
                 Il massaggio rilassante svedese si focalizza sulla riduzione
                 dello stress e sulla promozione del rilassamento attraverso
@@ -65,12 +100,14 @@ const Trattamenti = () => {
               data-aos="fade-left"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-2"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento2}
-                alt="Massaggio Rilassante"
-                loading="lazy"
-              />
+              <section id="massaggio-rilassante">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento2}
+                  alt="Massaggio Rilassante"
+                  loading="lazy"
+                />
+              </section>
             </div>
           </div>
 
@@ -91,12 +128,14 @@ const Trattamenti = () => {
               data-aos="fade-right"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-1"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento3}
-                alt="Massaggio Linfodrenante"
-                loading="lazy"
-              />
+              <section id="massaggio-linfodrenante">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento3}
+                  alt="Massaggio Linfodrenante"
+                  loading="lazy"
+                />
+              </section>
             </div>
             <div
               data-aos="fade-left"
@@ -133,12 +172,14 @@ const Trattamenti = () => {
               data-aos="fade-left"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-2"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento4}
-                alt="Massaggio Sportivo"
-                loading="lazy"
-              />
+              <section id="massaggio-sportivo">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento4}
+                  alt="Massaggio Sportivo"
+                  loading="lazy"
+                />
+              </section>
             </div>
           </div>
           <div className="vertical-divider"></div>
@@ -148,12 +189,14 @@ const Trattamenti = () => {
               data-aos="fade-right"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-1"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento5}
-                alt="Trattamento Cervicale"
-                loading="lazy"
-              />
+              <section id="trattamento-cervicale">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento5}
+                  alt="Trattamento Cervicale"
+                  loading="lazy"
+                />
+              </section>
             </div>
             <div
               data-aos="fade-left"
@@ -191,12 +234,14 @@ const Trattamenti = () => {
               data-aos="fade-left"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-2"
             >
-              <img
-                className="img-fluid treatment-img"
-                src={Trattamento6}
-                alt="Massoterapia"
-                loading="lazy"
-              />
+              <section id="massoterapia">
+                <img
+                  className="img-fluid treatment-img"
+                  src={Trattamento6}
+                  alt="Massoterapia"
+                  loading="lazy"
+                />
+              </section>
             </div>
           </div>
         </div>

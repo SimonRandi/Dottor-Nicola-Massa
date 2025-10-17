@@ -11,40 +11,39 @@ const Footer = () => {
         <div className="row justify-content-center">
           <div className="col-12 col-md-6  text-light">
             <h4 className="fw-bold mb-3">Contatti</h4>
-
             <p className="mb-1">
               <strong>Nicola Massa</strong> <br />
               Specialista in tecniche di Massoterapia Sanitaria M.C.B.
             </p>
             <div className="footer-divider"></div>
-            <p className="mb-1">
-              <MapPin /> Via Sardegna - 08020 San Toeodoro
+            <p className="mb-2">
+              <MapPin />{" "}
+              <span className="ms-1"> Via Sardegna - 08020 San Toeodoro</span>
             </p>
-
-            <p className="mb-1">
+            <p className="mb-2">
               <a
                 href="mailto:schintuantonio.mcb@gmail.com"
                 className="text-light text-decoration-none"
               >
                 {" "}
-                <Mail /> nicola.massa001@gmail.com
+                <Mail /> <span className="ms-1">nicola.massa001@gmail.com</span>
               </a>
-              <br />
-              <Phone /> Tel: +39 379 1089847
             </p>
-
+            <p className="mb-2">
+              <Phone /> <span className="ms-1">Tel: +39 379 1089847</span>
+            </p>
             <div className="social-icons ">
-              <FaInstagram size={22} />
+              <FaInstagram size={24} />
               <span className="ms-2">nicolamassa_massoterapista</span>
             </div>
             <div className="footer-divider"></div>
             <div className="">
               <p className="mb-1">Riceve per appuntamento:</p>
               <ul className="ps-3 mb-0">
-                <li>Nuoro - via Milano 38 (Studio SC Dental)</li>
-                <li>
+                <li className="mb-2">
                   San Teodoro - Viale Sardegna presso centro Commerciale Gambaru
                 </li>
+                <li>Nuoro - via Milano 38 (Studio SC Dental)</li>
               </ul>
             </div>
           </div>

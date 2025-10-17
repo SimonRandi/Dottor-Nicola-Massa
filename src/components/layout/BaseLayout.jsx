@@ -9,7 +9,9 @@ const BaseLayout = ({ children }) => {
     <>
       <div className="container-main">
         <Navigation />
-
+        <h1 className="heading-title">
+          Relax. <br /> Respira. <br /> Salute.
+        </h1>
         <Headers />
       </div>
 
