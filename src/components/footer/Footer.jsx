@@ -7,7 +7,7 @@ const Logo = "/image/logo-bianco.png";
 const Footer = () => {
   return (
     <footer id="footer" className="footer-container mt-4">
-      <div className="container  py-5">
+      <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-12 col-md-6  text-light">
             <h4 className="fw-bold mb-3">Contatti</h4>
