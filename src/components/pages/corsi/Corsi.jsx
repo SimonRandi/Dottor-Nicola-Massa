@@ -6,6 +6,8 @@ const Dolce = "/image/corsi/dolce.webp";
 import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
 import "../corsi/Corsi.css";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Corsi() {
   const corsi = [
@@ -43,6 +45,21 @@ export default function Corsi() {
     },
   ];
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Navigation3 />
@@ -53,7 +70,16 @@ export default function Corsi() {
 
         <Row className="g-4 justify-content-center">
           {corsi.map((corso, index) => (
-            <Col key={index} xs={12} sm={6} md={4} lg={3}>
+            <Col
+              key={index}
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              id={
+                corso.titolo === "Personal Training" ? "personal-training" : ""
+              }
+            >
               <Card
                 className="h-100 mx-auto shadow-lg border-1 d-flex flex-column justify-content-between"
                 style={{

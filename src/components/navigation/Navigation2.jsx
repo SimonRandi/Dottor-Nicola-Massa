@@ -35,7 +35,7 @@ const Navigation2 = () => {
                   className=" custom-text nav-link   fs-3"
                   to="/trattamenti"
                 >
-                  TARTTAMENTI
+                  TRATTAMENTI
                 </Link>
                 <Link className="nav-link custom-text fs-3" to="/corsi">
                   CORSI

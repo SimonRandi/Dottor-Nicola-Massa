@@ -9,21 +9,10 @@ const HeroSection = () => {
     <>
       <div className="container mb-3">
         <div className="row ">
-          <h2 className=" text-center heading-text mt-3 mb-3">
+          <h1 className=" text-center heading-text mt-3 mb-3">
             Benvenuti nel mio studio di Massoterapia e Chinesiologia, <br />{" "}
             dove il relax e il benessere si fondono armoniosamente.
-          </h2>
-          <div className="text-center mb-4">
-            <button
-              className="btn custom-btn"
-              onClick={() => {
-                const footer = document.getElementById("footer");
-                footer.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Contattami
-            </button>
-          </div>
+          </h1>
 
           <div
             /* data-aos="flip-right" */
@@ -50,7 +39,7 @@ const HeroSection = () => {
               src={Studio2}
               alt=""
             />
-            <p className="text-center  heading-text">
+            <p className="text-center  mb-4 heading-text">
               Scegliendo tra una vasta gamma di trattamenti, garantisco
               un'esperienza di assoluta qualità in cui ogni dettaglio è curato
               con attenzione.
@@ -62,11 +51,11 @@ const HeroSection = () => {
           >
             <img
               loading="lazy"
-              className="studio-image img-fluid"
+              className="studio-image mb-2 img-fluid"
               src={Studio1}
               alt=""
             />
-            <p className="text-center  heading-text">
+            <p className="text-center mb-4 heading-text">
               Il tuo confort e la tua soddisfazione sono <br /> la mia massima
               priorità.
             </p>

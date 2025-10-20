@@ -15,6 +15,21 @@
   color: rgb(77 147 172);
   text-align: center;
 }
+.custom-btn {
+  border: 5px solid white !important;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  transform: translateY(35%);
+}
 
 @media (max-width: 767px) {
   .container-main {

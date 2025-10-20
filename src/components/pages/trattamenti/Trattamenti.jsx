@@ -35,7 +35,6 @@ const Trattamenti = () => {
 
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // fallback: tenta anche dopo 500ms
     const timeout = setTimeout(scrollToSection, 500);
 
     return () => {
@@ -128,7 +127,7 @@ const Trattamenti = () => {
               data-aos="fade-right"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-1"
             >
-              <section id="massaggio-linfodrenante">
+              <section id="massaggio-drenante">
                 <img
                   className="img-fluid treatment-img"
                   src={Trattamento3}

@@ -19,7 +19,7 @@ const Domicilio = () => {
           </h2>
           <div className="col-12">
             <video
-              src="/image/Video Domicilio Finito.mp4"
+              src="/image/Video Domicilio Finito.webm"
               autoPlay
               muted
               loop
@@ -64,7 +64,9 @@ const Domicilio = () => {
                 <li onClick={() => goToSection("massaggio-rilassante")}>
                   Massaggio Rilassante
                 </li>
-                <li>Personal Training</li>
+                <li onClick={() => navigate("/corsi#personal-training")}>
+                  Personal Training
+                </li>
               </ul>
             </div>
             <div className="custom-divider mt-5 d-md-none"></div>
