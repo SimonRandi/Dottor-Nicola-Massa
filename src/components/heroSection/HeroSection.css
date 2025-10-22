@@ -1,3 +1,7 @@
+* {
+  font-family: "Prata", serif;
+}
+
 .font-heading-hero {
   font-family: "Open round heading";
   color: rgb(77 147 172);
@@ -22,7 +26,18 @@
 }
 
 .custom-btn {
-  border: 2px solid rgb(109, 106, 106) !important;
+  border: 2px solid grey !important;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: black;
+  margin-top: 5px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 767px) {

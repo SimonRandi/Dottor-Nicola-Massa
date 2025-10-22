@@ -9,7 +9,7 @@ const Footer = () => {
     <footer id="footer" className="footer-container mt-4">
       <div className="container py-5">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-6  text-light">
+          <div className="col-12 col-md-6   text-light">
             <h4 className="fw-bold mb-3">Contatti</h4>
             <p className="mb-1">
               <strong>Nicola Massa</strong> <br />
@@ -18,7 +18,10 @@ const Footer = () => {
             <div className="footer-divider"></div>
             <p className="mb-2">
               <MapPin />{" "}
-              <span className="ms-1"> Via Sardegna - 08020 San Toeodoro</span>
+              <span className="ms-1 telephone-number">
+                {" "}
+                Via Sardegna - 08020 San Toeodoro
+              </span>
             </p>
             <p className="mb-2">
               <a
@@ -30,7 +33,8 @@ const Footer = () => {
               </a>
             </p>
             <p className="mb-2">
-              <Phone /> <span className="ms-1">Tel: +39 379 1089847</span>
+              <Phone /> Tel:
+              <span className=" telephone-number ms-1">+39 379 1089847</span>
             </p>
             <div className="social-icons ">
               <FaInstagram size={24} />
@@ -43,7 +47,11 @@ const Footer = () => {
                 <li className="mb-2">
                   San Teodoro - Viale Sardegna presso centro Commerciale Gambaru
                 </li>
-                <li>Nuoro - via Milano 38 (Studio SC Dental)</li>
+                <li>
+                  Nuoro - via Milano{" "}
+                  <span className="telephone-number"> 38 </span>(Studio SC
+                  Dental)
+                </li>
               </ul>
             </div>
           </div>

@@ -13,7 +13,7 @@ import NotFoundPage from "./components/pages/not-found-page/NotFoundPage.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: false,
     });
   }, []);

@@ -15,20 +15,22 @@
   color: rgb(77 147 172);
   text-align: center;
 }
-.custom-btn {
-  border: 5px solid white !important;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: transparent;
+
+.front-page-heading {
+  font-family: "Lora", serif;
   color: white;
+
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  margin: 1rem;
+  text-align: end;
+  font-size: 35px;
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  transform: translateY(35%);
+.profession-title {
+  font-size: 15px;
+  font-family: "Lora", serif;
 }
 
 @media (max-width: 767px) {
@@ -40,5 +42,16 @@
   .heading-title {
     font-size: 32px;
     padding: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .front-page-heading {
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    right: 50%;
+    left: 40%;
+    font-size: 70px !important;
   }
 }

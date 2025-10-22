@@ -9,20 +9,14 @@ const BaseLayout = ({ children }) => {
     <>
       <div className="container-main">
         <Navigation />
-        <div className="text-center button-wrapper mb-4">
-          <button
-            className=" custom-btn"
-            onClick={() => {
-              const footer = document.getElementById("footer");
-              footer.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Contattami
-          </button>
+        <div className="d-flex align-items-center  justify-content-center">
+          <h1 className="front-page-heading">
+            NICOLA <br /> MASSA <br />{" "}
+            <p className="profession-title">
+              MASSOTERAPISTA <br /> CHINESIOLOGO{" "}
+            </p>
+          </h1>
         </div>
-        {/* <h1 className="heading-title">
-          Relax. <br /> Respira. <br /> Salute.
-        </h1> */}
         <Headers />
       </div>
 

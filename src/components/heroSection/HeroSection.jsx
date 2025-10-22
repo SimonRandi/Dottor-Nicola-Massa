@@ -9,11 +9,21 @@ const HeroSection = () => {
     <>
       <div className="container mb-3">
         <div className="row ">
-          <h1 className=" text-center heading-text mt-3 mb-3">
+          <h1 className=" text-center heading-text mt-3">
             Benvenuti nel mio studio di Massoterapia e Chinesiologia, <br />{" "}
             dove il relax e il benessere si fondono armoniosamente.
           </h1>
-
+          <div className="text-center button-wrapper ">
+            <button
+              className=" custom-btn"
+              onClick={() => {
+                const footer = document.getElementById("footer");
+                footer.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contattami
+            </button>
+          </div>
           <div
             /* data-aos="flip-right" */
             className="col-12 col-md-4 d-flex flex-column"

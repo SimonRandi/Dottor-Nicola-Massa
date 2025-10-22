@@ -1,9 +1,6 @@
-* {
-  font-family: "Open round heading";
-}
-
 .footer-container {
   background-color: rgb(77 147 172);
+  font-family: "Prata", serif !important;
 }
 
 .footer-divider {
@@ -21,6 +18,11 @@
 
 .bounce {
   animation: bounce 2s infinite alternate;
+}
+
+.telephone-number {
+  font-family: "Prata", serif !important;
+  font-size: 15px;
 }
 
 @keyframes bounce {
