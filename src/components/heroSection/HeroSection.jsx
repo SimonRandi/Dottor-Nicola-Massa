@@ -66,7 +66,7 @@ const HeroSection = () => {
               alt=""
             />
             <p className="text-center mb-4 heading-text">
-              Il tuo confort e la tua soddisfazione sono <br /> la mia massima
+              Il tuo confort e la tua salute sono <br /> la mia massima
               priorità.
             </p>
           </div>

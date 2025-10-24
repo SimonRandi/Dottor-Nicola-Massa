@@ -13,7 +13,7 @@ const BaseLayout = ({ children }) => {
           <h1 className="front-page-heading">
             NICOLA <br /> MASSA <br />{" "}
             <p className="profession-title">
-              MASSOTERAPISTA <br /> CHINESIOLOGO{" "}
+              CHINESIOLOGO <br /> MASSOTERAPISTA <br />{" "}
             </p>
           </h1>
         </div>

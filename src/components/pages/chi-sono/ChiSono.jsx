@@ -23,35 +23,35 @@ const ChiSono = () => {
               </h1>
               <p className="   mt-3">
                 Sono un Chinesiologo - Massoterapista. <br />
-                Sono nato a Nuoro ma mi sono trasferito per studio prima nelle
-                marche e poi in Lombardia, ho deciso di fare ritorno nella mia
-                isola per aprire uno studio professionale.{" "}
+                Nato e vissuto a Nuoro, trasferito per studi prima nelle Marche
+                e successivamente in Lombardia, ho deciso di fare ritorno nella
+                mia Isola per aprire uno studio professionale.{" "}
               </p>
               <div className="vertical-divider"></div>
 
-              <h3 className="   mt-4 ">Qualifiche:</h3>
+              <h3 className="   mt-4 ">QUALIFICHE:</h3>
               <p className="  mt-4 ">
                 Ho conseguito la{" "}
-                <small className="fw-bold text-dark">
+                <span className="fw-bold text-dark">
                   {" "}
                   Laurea Triennale in Scienze Motorie, Sportive e della Salute
-                </small>{" "}
+                </span>{" "}
                 presso l'Università Carlo Bo di Urbino nel 2019. <br />
               </p>
               <p className="  mt-4">
                 Nel 2021 ho conseguito la{" "}
-                <small className="fw-bold text-dark">
+                <span className="fw-bold text-dark">
                   Laurea Magistrale in Scienze e Tecniche delle Attività Motorie
                   Preventive e Adatte
-                </small>{" "}
+                </span>{" "}
                 presso l'Università degli Studi di Pavia.
               </p>
               <p className="  mt-4 ">
                 Per ampliare ulteriormente le mie conoscenze nell'ambito del
                 fitness e del benessere, nel 2022 ho ottenuto il{" "}
-                <small className="fw-bold text-dark">
+                <span className="fw-bold text-dark">
                   Diploma di MCB (Massoterapista)
-                </small>{" "}
+                </span>{" "}
                 presso la scuola di specializzazione Essence Academy di Milano.
               </p>
               <div className="vertical-divider"></div>
