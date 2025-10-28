@@ -74,7 +74,7 @@ export default function Corsi() {
               key={index}
               xs={12}
               sm={6}
-              md={4}
+              md={6}
               lg={3}
               id={
                 corso.titolo === "Personal Training" ? "personal-training" : ""
@@ -108,10 +108,10 @@ export default function Corsi() {
                       >
                         {corso.titolo}
                       </Card.Title>
-                      <Card.Text className="text-center small mb-1">
+                      <Card.Text className="text-center fw-bold small mb-1">
                         {corso.persone}
                       </Card.Text>
-                      <Card.Text className="text-center small mb-3">
+                      <Card.Text className="text-center fw-bold small mb-3">
                         {corso.durata}
                       </Card.Text>
                       <Card.Text

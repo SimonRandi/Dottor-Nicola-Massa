@@ -11,7 +11,7 @@ import Navigation3 from "../../navigation/Navigation3";
 import Footer from "../../footer/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Diamond } from "lucide-react";
+import { Dot } from "lucide-react";
 
 const Trattamenti = () => {
   const location = useLocation();
@@ -80,16 +80,16 @@ const Trattamenti = () => {
                 <span className="fw-bold text-dark">
                   risolvere le contratture
                 </span>
-                . Agendo in profondità, migliora la{" "}
+                . Agendo in profondità, migliora significativamente la{" "}
                 <span className="fw-bold text-dark">circolazione</span> e l'
                 <span className="fw-bold text-dark">ossigenazione</span> dei
                 tessuti, accelerando il{" "}
                 <span className="fw-bold text-dark">recupero funzionale</span>.
-                L’obiettivo è{" "}
+                L’obiettivo primario consiste nel{" "}
                 <span className="fw-bold text-dark">
                   ristabilire il tono muscolare ottimale
                 </span>
-                , alleviare il dolore e{" "}
+                , alleviare efficacemente il dolore e{" "}
                 <span className="fw-bold text-dark">
                   incrementare la mobilità
                 </span>
@@ -110,11 +110,10 @@ const Trattamenti = () => {
               </h2>
 
               <p className="text-black text-font text-center">
-                Il{" "}
-                <span className="fw-bold text-dark">
+                {/* <span className="fw-bold text-dark">
                   Massaggio Rilassante Svedese
-                </span>{" "}
-                è ideale per{" "}
+                </span>{" "} */}
+                Trattamento ideale per{" "}
                 <span className="fw-bold text-dark">
                   promuovere un benessere psicofisico ottimale.
                 </span>{" "}
@@ -129,13 +128,14 @@ const Trattamenti = () => {
                 <span className="fw-bold">
                   sensibile miglioramento del sonno.
                 </span>{" "}
-                E' <span className="fw-bold">indicato</span> per contrastare{" "}
-                <span className="fw-bold">stress</span>,{" "}
+                E' <span className="fw-bold">particolarmente indicato</span> in
+                caso di <span className="fw-bold">stress</span>,{" "}
                 <span className="fw-bold">ansia leggera</span> e{" "}
-                <span className="fw-bold">insonnia</span>, donando una{" "}
+                <span className="fw-bold">insonnia</span>.{" "}
+                {/* donando una{" "}
                 <span className="fw-bold">
                   sensazione di leggerezza immediata.
-                </span>
+                </span> */}
               </p>
             </div>
             <div
@@ -187,8 +187,7 @@ const Trattamenti = () => {
                 Massaggio Linfodrenante
               </h2>
               <p className="text-black text-font text-center">
-                Il <span className="fw-bold">Massaggio Linfodrenante</span> è un{" "}
-                <span className="fw-bold">trattamento</span> che , attraverso{" "}
+                Trattamento che , attraverso{" "}
                 <span className="fw-bold">
                   manualità ritmiche, leggere e superficiali, stimola il sistema
                   linfatico.{" "}
@@ -199,15 +198,17 @@ const Trattamenti = () => {
                 </span>{" "}
                 e favorire l'{" "}
                 <span className="fw-bold">
-                  eliminazionedi tossine e cataboliti.
+                  eliminazione di tossine e cataboliti.
                 </span>{" "}
                 E' fortemente <span className="fw-bold">indicato</span> per
                 contrastare{" "}
-                <span className="fw-bold">ritenzione idrica,edemi </span> e come
-                supporto nel trattamento di{" "}
+                <span className="fw-bold">ritenzione idrica, edemi </span> e
+                come supporto nel trattamento di{" "}
                 <span className="fw-bold">cicatrici</span> e{" "}
-                <span className="fw-bold">inestetismi della cellulite</span>.{" "}
-                <br />I principali <span className="fw-bold">benefici</span>{" "}
+                <span className="fw-bold">
+                  inestetismi cutanei dovuti a cellulite
+                </span>
+                . <br />I principali <span className="fw-bold">benefici</span>{" "}
                 includono la riduzione del senso di pesantezza, una visibile
                 diminuzione del gonfiore e un notevole miglioramento delle
                 funzionalità circolatoria e del tono cutaneo.
@@ -225,9 +226,8 @@ const Trattamenti = () => {
                 Massaggio Sportivo
               </h2>
               <p className="text-black text-font text-center">
-                Il <span className="fw-bold">Massaggio Sportivo</span> è un{" "}
-                <span className="fw-bold">trattamento profondo e vigoroso</span>{" "}
-                che agisce sulle masse muscolari sottoposte a sforzo intenso per{" "}
+                Trattamento profondo e vigoroso che agisce sulle masse muscolari
+                sottoposte a sforzo intenso volto ad{" "}
                 <span className="fw-bold">
                   ottimizzare la performance e accellerare il recupero
                 </span>
@@ -245,11 +245,12 @@ const Trattamenti = () => {
                 <span className="fw-bold">miglioramento dell'elasticità</span> e
                 una{" "}
                 <span className="fw-bold">
-                  significativa riduzione delle tensione e contratture
+                  significativa riduzione delle tensioni e contratture
                   localizzate .
                 </span>
               </p>
             </div>
+
             <div
               data-aos="fade-left"
               className="col-12 col-md-6 d-flex justify-content-center mt-4 order-1 order-md-2"
@@ -264,7 +265,18 @@ const Trattamenti = () => {
               </section>
             </div>
           </div>
-          <div className="vertical-divider"></div>
+          <div className="text-center  ">
+            <button
+              className="btn custom-btn"
+              onClick={() => {
+                const footer = document.getElementById("footer");
+                footer.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contattami
+            </button>
+          </div>
+          {/* <div className="vertical-divider"></div> */}
 
           <div className="row">
             <div
@@ -274,6 +286,7 @@ const Trattamenti = () => {
               <section id="trattamento-cervicale">
                 <img
                   className="img-fluid treatment-img"
+                  id="cervicale"
                   src={Trattamento5}
                   alt="Trattamento Cervicale"
                   loading="lazy"
@@ -288,9 +301,7 @@ const Trattamenti = () => {
                 Trattamento Cervicale
               </h2>
               <p className="text-black text-font text-center">
-                Il <span className="fw-bold">Trattamento Cervicale</span> è una{" "}
-                <span className="fw-bold">terapia manuale</span> che si
-                concentra su{" "}
+                Terapia manuale che si concentra su{" "}
                 <span className="fw-bold">collo , spalle e schiena alta</span>.
                 Utilizza{" "}
                 <span className="fw-bold">manovre profonde e controllate</span>{" "}
@@ -298,7 +309,7 @@ const Trattamenti = () => {
                 scorrette. E' <span className="fw-bold">indicato </span> per chi
                 soffre di{" "}
                 <span className="fw-bold">
-                  dolore cervicale , torcicollo ,rigidità
+                  dolore cervicale , torcicollo , rigidità
                 </span>{" "}
                 e <span className="fw-bold">cefalee tensive</span>. I principali{" "}
                 <span className="fw-bold">benefici</span> includono{" "}
@@ -322,20 +333,18 @@ const Trattamenti = () => {
                 Massoterapia
               </h2>
               <p className="text-black text-font text-center">
-                La <span className="fw-bold">Massoterapia</span> è un{" "}
-                <span className="fw-bold">trattamento di terapia manuale</span>{" "}
-                a finalità esclusivamente{" "}
+                Trattamento di terapia manuale a finalità esclusivamente{" "}
                 <span className="fw-bold">terapeutica</span>, mirata alla
                 gestione e{" "}
                 <span className="fw-bold">
                   risoluzione di precise patologie
                 </span>{" "}
-                dell'aparato muscolo scheletrico. E'{" "}
+                dell'aparato muscolo-scheletrico. E'{" "}
                 <span className="fw-bold">indicata</span> in presenza di{" "}
                 <span className="fw-bold">diagnosi specifiche</span> (es.
                 lombalgia, sciatalgia, tendiniti o dolori articolari) e
                 nell'ambito di{" "}
-                <span className="fw-bold">percorsi riabilitativi</span>I
+                <span className="fw-bold">percorsi riabilitativi</span>. I
                 principali <span className="fw-bold">benefici</span> includono
                 la{" "}
                 <span className="fw-bold">
@@ -346,7 +355,10 @@ const Trattamenti = () => {
                   l'accelerazione del recupero funzionale
                 </span>
                 . <br />
-                <Diamond /> <span className="fw-bold">Nota importante:</span> In
+                <span className="fw-1">
+                  <Dot />
+                </span>{" "}
+                <span className="fw-bold">Nota importante:</span> In
                 obtemperanza alle normative vigenti, il trattamento di
                 Massoterapia a fini curativi è{" "}
                 <span className="fw-bold">

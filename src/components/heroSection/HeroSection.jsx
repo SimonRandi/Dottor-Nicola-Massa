@@ -35,8 +35,8 @@ const HeroSection = () => {
               loading="lazy"
             />
             <p className="text-center heading-text mb-4 ">
-              Qui, nel cuore di un atmosfera accogliente e raffinata, offro un
-              esperienza personalizzata e mirata alle singole esigenze.
+              Qui, immerso in un'atmosfera accogliente e raffinata, vivrai un
+              esperienza unica e mirata a soddisfare le tue esigenze.
             </p>
           </div>
           <div
@@ -50,9 +50,9 @@ const HeroSection = () => {
               alt=""
             />
             <p className="text-center  mb-4 heading-text">
-              Scegliendo tra una vasta gamma di trattamenti, garantisco
-              un'esperienza di assoluta qualità in cui ogni dettaglio è curato
-              con attenzione.
+              Potrai scegliere tra una vasta gamma di trattamenti, attraverso un
+              percorso personalizzato di qualità in cui ogni dettaglio è curato
+              con attenzione
             </p>
           </div>
           <div
@@ -66,7 +66,7 @@ const HeroSection = () => {
               alt=""
             />
             <p className="text-center mb-4 heading-text">
-              Il tuo confort e la tua salute sono <br /> la mia massima
+              Il tuo comfort e la tua salute sono <br /> la mia massima
               priorità.
             </p>
           </div>

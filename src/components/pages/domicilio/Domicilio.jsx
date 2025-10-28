@@ -50,7 +50,7 @@ const Domicilio = () => {
             <div className="d-flex justify-content-center mt-4">
               <ul className="list-unstyled lh-3 lista-servizi ">
                 <li onClick={() => goToSection("massoterapia")}>
-                  Trattamento Terapeutico
+                  Massoterapia
                 </li>
                 <li onClick={() => goToSection("massaggio-decontratturante")}>
                   Massaggio Decontratturante
@@ -63,6 +63,9 @@ const Domicilio = () => {
                 </li>
                 <li onClick={() => goToSection("massaggio-rilassante")}>
                   Massaggio Rilassante
+                </li>
+                <li onClick={() => goToSection("cervicale")}>
+                  Trattamento Cervicale
                 </li>
                 <li onClick={() => navigate("/corsi#personal-training")}>
                   Personal Training

@@ -20,7 +20,7 @@ const Footer = () => {
               <MapPin />{" "}
               <span className="ms-1 telephone-number">
                 {" "}
-                Via Sardegna - 08020 San Toeodoro
+                Via Sardegna - 08020 San Teodoro
               </span>
             </p>
             <p className="mb-2">

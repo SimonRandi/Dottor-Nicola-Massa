@@ -24,7 +24,7 @@
   height: 1px;
   background-color: black;
   margin: 1rem auto;
-  opacity: 0.5; /* opzionale, per un look più delicato */
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
