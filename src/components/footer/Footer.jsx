@@ -1,7 +1,7 @@
 import React from "react";
 import "../footer/Footer.css";
 import { FaInstagram } from "react-icons/fa";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, MessageCircle } from "lucide-react";
 const Logo = "/image/logo-bianco.png";
 
 const Footer = () => {
@@ -16,6 +16,7 @@ const Footer = () => {
               Specialista in tecniche di Massoterapia Sanitaria M.C.B.
             </p>
             <div className="footer-divider"></div>
+
             <p className="mb-2">
               <MapPin />{" "}
               <span className="ms-1 telephone-number">
@@ -33,8 +34,10 @@ const Footer = () => {
               </a>
             </p>
             <p className="mb-2">
-              <Phone /> Tel:
-              <span className=" telephone-number ms-1">+39 379 1089847</span>
+              <MessageCircle />
+              <span className=" telephone-number ms-2">
+                Tel: +39 379 1089847
+              </span>
             </p>
             <div className="social-icons ">
               <FaInstagram size={24} />

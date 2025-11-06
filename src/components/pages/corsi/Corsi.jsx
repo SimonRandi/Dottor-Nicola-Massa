@@ -16,7 +16,7 @@ export default function Corsi() {
       persone: "Max 2 persone per turno",
       durata: "Durata seduta - 50 minuti",
       descrizione:
-        "L'allenamento funzionale è una pratica in cui vengono proposti esercizi volti a coinvolgere simultaneamente diversi gruppi muscolari. Possono essere svolti esercizi singoli , a circuito, a corpo libero oppure con ausilio di picooli e grandi attrezzi come kettlebell , elastici , manubri e bilancieri. E' la scelta perfetta per chi cerca un attività mirata alla ricomposizione corporea e al rinforzo muscolare",
+        "L'allenamento funzionale è una pratica in cui vengono proposti esercizi (singoli o a circuito) volti a coinvolgere contemporaneamente diversi gruppi muscolari. Si tratta di esercizi a corpo libero o che richiedono l'ausilio di attrezzi come kettlebell, elastici, manubri e bilancieri. E' la scelta perfetta per chi cerca un'attività mirata alla ricomposizione corporea e al rinforzo muscolare. ",
       img: Funzionale,
     },
     {
@@ -24,7 +24,7 @@ export default function Corsi() {
       persone: "1 persona",
       durata: "Durata seduta - 50 minuti",
       descrizione:
-        "Sessione individuale con un trainer qualificato, interamente focalizzata sui tuoi obbiettivi. Indicato per chi cerca il massimo risultato o necessita di un supporto specifico. Il beneficio principale è un piano personalizzato e un monitoraggio costante che garantiscono il raggungimento mirato dei risultati desiderati.",
+        "Sessione individuale con un trainer qualificato, interamente focalizzata sui tuoi obiettivi. Indicato per chi cerca il massimo risultato o necessita di un supporto specifico. È indicato qualora si desiderino un piano personalizzato e un monitoraggio costante che garantiscono il raggiungimento mirato dei risultati desiderati.",
       img: Personal,
     },
     {
@@ -32,7 +32,7 @@ export default function Corsi() {
       persone: "Max 2 persone per turno",
       durata: "Durata seduta - 50 minuti",
       descrizione:
-        "La Ginnastica Posturale è un percorso personalizzato essenziale per migliorare l'allineamento del corpo e correggere le abitudini posturali scorrette. Questa disciplina è consigliata a persone di tutte le età , rivelandosi particolarmente utile per chi conduce una vita sedentaria o avverte rigidità diffusa. Il beneficio primariio è la prevenzione dei dolori muscolo-scheletrici e un generale aumento del benessere fisico. ",
+        "La Ginnastica Posturale è un percorso personalizzato essenziale per migliorare l'allineamento del corpo e correggere le abitudini posturali scorrette. Questa disciplina è consigliata a persone di tutte le età, rivelandosi particolarmente utile per chi conduce una vita sedentaria o avverte rigidità diffusa. Il beneficio primario è la prevenzione dei dolori muscolo-scheletrici e un generale aumento del benessere fisico.",
       img: Posturale,
     },
     {
@@ -40,7 +40,7 @@ export default function Corsi() {
       persone: "Max 2 persone per turno",
       durata: "Durata seduta - 50 minuti",
       descrizione:
-        "La Ginnastica Dolce è un' attività graduale e a basso impatto focalizzata su movimenti lenti e controllati per migliorare mobilità , forza e flessibilità. E' l'ideale per chiunque desideri mantenersi attivo, inclusi principianti, persone sedentarie o anziani. Questa attività garantisce un miglioramento della postura, della salute cardiovascolare e un generale senso di benessere senza stress per le articolazioni.",
+        "La Ginnastica Dolce è un'attività graduale e a basso impatto, focalizzata su movimenti lenti e controllati per migliorare mobilità, forza e flessibilità. E' l'ideale per chiunque desideri mantenersi attivo (inclusi principianti, persone sedentarie o anziani). Questa attività garantisce un miglioramento della postura, della salute cardiovascolare e un generale senso di benessere senza stress per le articolazioni.",
       img: Dolce,
     },
   ];
