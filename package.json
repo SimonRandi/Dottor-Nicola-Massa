@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@vantezzen/react-cookie-banner": "^0.1.8",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.7",
     "i18next": "^25.6.0",

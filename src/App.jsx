@@ -1,4 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  CookieConsentProvider,
+  CookieBanner,
+} from "@vantezzen/react-cookie-banner";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +13,8 @@ import ChiSono from "./components/pages/chi-sono/ChiSono.jsx";
 import Corsi from "./components/pages/corsi/Corsi.jsx";
 import Domicilio from "./components/pages/domicilio/Domicilio.jsx";
 import NotFoundPage from "./components/pages/not-found-page/NotFoundPage.jsx";
+import Privacy from "./components/pages/privacy/Privacy.jsx";
+import CookiePolicy from "./components/pages/cookie/CookiePolicy.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -19,16 +25,25 @@ const App = () => {
   }, []);
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route index path="/" element={<Homepage />}></Route>
-          <Route path="/trattamenti" element={<Trattamenti />}></Route>
-          <Route path="/chi-sono" element={<ChiSono />}></Route>
-          <Route path="/corsi" element={<Corsi />}></Route>
-          <Route path="/domicilio" element={<Domicilio />}></Route>
-          <Route path="*" element={<NotFoundPage />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <CookieConsentProvider>
+        <CookieBanner
+          privacyPolicyUrl="/privacy"
+          cookiePolicyUrl="/cookie-policy"
+        />
+        <BrowserRouter>
+          <Routes>
+            <Route index path="/" element={<Homepage />}></Route>
+            <Route path="/trattamenti" element={<Trattamenti />}></Route>
+            <Route path="/chi-sono" element={<ChiSono />}></Route>
+            <Route path="/corsi" element={<Corsi />}></Route>
+            <Route path="/domicilio" element={<Domicilio />}></Route>
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
+
+            <Route path="*" element={<NotFoundPage />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </CookieConsentProvider>
     </>
   );
 };

@@ -16,6 +16,8 @@ const Footer = () => {
               Specialista in tecniche di Massoterapia Sanitaria M.C.B.
             </p>
             <div className="footer-divider"></div>
+            <p className="telephone-number">P. Iva 01643250911</p>
+            <div className="footer-divider"></div>
 
             <p className="mb-2">
               <MapPin />{" "}
@@ -61,6 +63,20 @@ const Footer = () => {
           <div className="col-12 col-md-6">
             <div className="d-flex justify-content-center"></div>
             <img className="footer-logo bounce" src={Logo} alt="" />
+          </div>
+          <div className="mt-3">
+            <footer>
+              <a className="text-decoration-none text-light" href="/privacy">
+                Privacy Policy
+              </a>{" "}
+              ·{" "}
+              <a
+                className="text-decoration-none text-light"
+                href="/cookie-policy"
+              >
+                Cookie Policy
+              </a>
+            </footer>
           </div>
         </div>
       </div>
