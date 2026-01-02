@@ -17,7 +17,7 @@ const Privacy = () => {
             <h3 className="mt-4">Titolare del trattamento</h3>
             <p>
               Dott. Nicola Massa <br />
-              Email: info@dottornicolamassa.it
+              Email: nicola.massa001@gmail.com
             </p>
 
             <h3 className="mt-4">Tipologie di dati trattati</h3>
